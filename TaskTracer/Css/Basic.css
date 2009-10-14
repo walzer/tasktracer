@@ -1,0 +1,909 @@
+/****************************** Basic *******************************/
+
+/* body */
+body {
+font-family: Tahoma;
+font-size: 12px;
+margin:0;
+padding:0;
+}
+
+/* logo */
+#TopNavLogo {
+font-size: 26px;
+color: #E1E1E1;
+text-decoration: none;
+}
+
+/* top id */
+#TopBCRId {
+font-size: 20px;
+color: #E1E1E1;
+text-decoration: none;
+}
+
+#ButtonList {
+background-color: #C6C3C6;
+}
+
+/* base tab */
+.BaseTab {
+margin-top: 5px;
+background-color: #C1DAF0;
+padding-bottom: 15px;
+width: 100%;
+display: block;
+}
+
+.BaseTab ul {
+margin: 0;
+padding: 0;
+background-color: #FFFFFF;
+width: 100%;
+}
+
+.BaseTab ul li {
+list-style: none;
+margin-left: 0;
+padding: 3px 12px 4px;
+border:1px solid #999;
+border-bottom:0;
+font-weight: bold;
+display: inline;
+background: #FFFFFF;
+border-bottom: 1px solid #507CB5;
+float: left;
+line-height: 21px;	
+}
+
+.BaseTab ul li.SpaceTab {
+background: #FFFFFF;
+border-bottom: 1px solid #507CB5;
+border-top: 1px solid #FFFFFF;
+border-style: solid none solid;
+display: block;
+}
+
+.BaseTab ul li.Active {
+background: #C1DAF0;
+border-bottom: 1px solid #C1DAF0;
+border-top: 1px solid #507CB5;
+border-right: 1px solid #507CB5;
+border-left: 1px solid #507CB5;
+}
+
+.BaseTab ul li.Active a {
+text-decoration: none;
+}
+
+.BaseTab a, .BaseTab a:after {
+color: #37428A;
+}
+
+.BaseTab ul li.EndTab {
+background: #FFFFFF;
+border-bottom: 1px solid #507CB5;
+border-top: 1px solid #FFFFFF;
+border-style: solid none solid;
+margin: 0;
+display: block;
+float: none;
+}
+
+/* common div */
+div.CommonDiv{
+  background-color: #FFFFFF;
+  border: 1px solid #919B9C;
+  margin:1px;
+  float: left;
+  display: inline;
+}
+/* common div end*/
+
+/****************************** Layout ******************************/
+
+/* top nav */
+#TopNavMain {
+width: 100%;
+height: 35px;
+margin: 0;
+clear: both;
+}
+
+#TopNavLogo {
+float: left;
+margin: 1px 10px;
+}
+
+/* top id */
+#TopBCRId {
+float: left;
+margin-top: 5px;
+width: 70%;
+}
+
+#TopBCRId a {
+color: #E0E0E0;
+float: center;
+padding: 6px 1px 0 1px;
+text-decoration: none;
+}
+
+#TopNavAbout {
+float: right;
+margin-top: 10px;
+margin-bottom: 0;
+}
+
+#TopNavAbout a {
+margin: 0 1px 0 0;
+padding: 4px 1px;
+text-decoration: none;
+}
+
+#TopBCR{
+background-color: #C6C3C6;
+float:left;
+width:100%;
+margin: 0px;
+padding-top:5px;
+clear:none;
+padding-bottom:0px;
+}
+
+#TopBCR ul li{
+padding: 3px 13px 3px;
+background-color: #C6C3C6;
+}
+
+#TopBCR ul li.SpaceTab, #TopBCR ul li.EndTab{
+border-top: 1px solid #C6C3C6;
+}
+
+#TopBCR ul li.Active {
+border-bottom: 1px solid #FFFFFF;
+}
+
+#TopBCR #CreatBC {
+padding-left:0;
+padding-right:0;
+border-width:1px 0 1px;
+}
+
+#TopBCR ul li.Cram{
+padding: 0;
+}
+
+#TopBCR ul li.Cram a{
+padding: 3px 13px 3px;
+display:block;
+margin:0;
+}
+
+#TopNavProjectListLi{
+float:left;
+height:22px;
+margin-top:0px;
+border-style:none;
+border-bottom:1px solid #507CB5;
+padding-bottom:0px;
+padding-right:5px;
+padding-left:0px;
+}
+
+#TopNavProjectList {
+width: 210px!important;
+width: 21%;
+border: 1px solid #395EBB;
+float:left;
+margin-left:-10px;
+}
+
+/****************************** Forms *******************************/
+
+/****************************** Tables ******************************/
+
+/* common table */
+table.CommonTable{
+border-collapse: collapse;
+width:100%;
+border:1px solid #808080;
+background-color: #FFFFFF;
+font-size:12px;
+}
+
+table.CommonTable caption{
+font-size:13px;
+border:1px solid #808080;
+margin:0;
+}
+
+table.CommonTable th, table.CommonTable td{
+margin:1px;
+padding:2px 2px 2px;
+border-width: 1px 0;
+border-style:solid;
+border-color:#DDDDBB;
+}
+
+table.CommonTable label{
+font-size:12px;
+}
+
+table.CommonTable select.FullSelect{
+width:100%;
+}
+
+table.CommonTable select.MultiSelect{
+width:120px;
+}
+
+table.CommonTable a {
+text-decoration:none;
+}
+
+table.CommonTable th a:visited {
+color:#0000FF;
+}
+
+table.CommonSubTable {
+border-width:0;
+margin:0;
+}
+
+table.CommonSubTable th, table.CommonSubTable td{
+border-width: 0 0 1px 0;
+}
+
+/* common table end*/
+table.AdminTable tr th {
+text-align:left;
+}
+/* admin table start */
+
+/* admin table end */
+
+/****************************** Print *******************************/
+
+
+
+/****************************** Theme *******************************/
+
+body {
+color: #020202;
+background-color: #FFFFFF;
+}
+
+/* top nav */
+#TopNavMain {
+border-bottom: 2px solid #CCCCCC;
+}
+
+#TopNavAbout a {
+color : #F0F0F0;
+}
+
+body.BugMode {
+  background-color: #F6F6F6;
+}
+
+h2.BugMode {
+  background-color: #F6F6F6;
+}
+
+body.BugMain {
+  background-color: #F6F6F6;
+}
+
+body.PaddingBoy {
+padding: 2px;
+}
+
+.BugMode #TopNavMain{
+background-color: #95B3DE;
+}
+
+.BugMode #TopBCR ul li.Active {
+border-bottom: 1px solid #F6F6F6;
+background-color: #F6F6F6;
+}
+
+table.BugMode {
+border-color: #8AAFE1;
+}
+
+table.BugMode caption,table.BugMode td.TdCaption{
+background-color:#D6DEEC;
+border-color: #8AAFE1;
+border-width: 1px 1px 0 1px;
+color: #666666;
+}
+
+
+body.CaseMode {
+  background-color: #F6F6F6;
+}
+h2.CaseMode {
+  background-color: #F6F6F6;
+}
+body.CaseMain {
+  background-color: #F6F6F6;
+}
+
+.CaseMode #TopNavMain{
+background-color: #9DAF6F;
+}
+
+.CaseMode #TopBCR ul li ,.CaseMode #TopBCR ul li.SpaceTab, .CaseMode #TopBCR ul li.EndTab, .CaseMode #TopNavProjectListLi{
+border-bottom: 1px solid #3E7E2E;
+}
+
+.CaseMode #TopBCR ul li.Active {
+border-color: #3E7E2E;
+}
+
+.CaseMode #TopBCR ul li.Active {
+border-bottom: 1px solid #F6F6F6;
+background-color: #F6F6F6;
+}
+
+table.CaseMode {
+border-color: #3E7E2E;
+}
+
+table.CaseMode caption,table.CaseMode td.TdCaption{
+background-color:#B9C49B;
+border-color: #3E7E2E;
+border-width: 1px 1px 0 1px;
+color: #666666;
+}
+
+body.ResultMode {
+  background-color: #F6F6F6;
+}
+
+h2.ResultMode {
+  background-color: #F6F6F6;
+}
+
+body.ResultMain {
+  background-color: #F6F6F6;
+}
+
+.ResultMode #TopNavMain{
+background-color: #B1A168;
+}
+
+.ResultMode #TopBCR ul li ,.ResultMode #TopBCR ul li.SpaceTab, .ResultMode #TopBCR ul li.EndTab, .ResultMode #TopNavProjectListLi{
+border-bottom: 1px solid #996633;
+}
+
+.ResultMode #TopBCR ul li.Active {
+border-color: #996633;
+}
+
+.ResultMode #TopBCR ul li.Active {
+border-bottom: 1px solid #F6F6F6;
+background-color: #F6F6F6;
+}
+
+table.ResultMode {
+border-color: #996633;
+}
+
+table.ResultMode caption,table.ResultMode td.TdCaption{
+background-color:#D2C99A;
+border-color: #996633;
+border-width: 1px 1px 0 1px;
+color: #666666;
+}
+
+
+/* img */
+a img {
+  border: 0;
+  }
+
+/* fieldset */
+fieldset.Normal{
+padding: 3px 0px 3px 12px;
+margin: 0;
+word-break: break-all;
+word-wrap:break-word;
+}
+
+fieldset.Normal legend{
+color:#008000;
+font-weight:bold;
+}
+
+textarea{
+padding:3px;
+}
+
+/* Form */
+form {
+margin:0;
+}
+
+form p {
+  width: 100%;
+  text-align: center;
+  }
+
+form p label {
+  width: 200px;
+  margin: 0;
+  float: left;
+  text-align: right;
+  }
+
+form p input {
+  margin-left: 12px;
+  float: left;
+  }
+
+form div {
+  text-align: center;
+  }
+
+#CustomDisplay, #CustomDispay div, #CustomDispay div label {
+  text-align: left;
+  font-size: 12px;
+}
+
+#CustomDisplay a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* border */
+input, textarea, select{
+}
+
+/* focus */
+input:focus, textarea:focus, select:focus{
+background-color: #FEFDB9;
+border-color: #E88C25;
+}
+
+textarea{
+font-size:13px;
+}
+
+textarea{
+overflow-y:auto;
+overflow-x:auto;
+}
+
+.ActionButton{
+width:100px;
+}
+
+/* no bolder */
+.NoBorder {
+border: 0;
+}
+
+.FloatLeft{
+float:left;
+}
+
+.FloatRight{
+float:right;
+}
+
+/* reset button */
+.Reset {
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #444444;
+  }
+
+
+
+#ActionMessage {
+  color: 030303;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin: 22px 22px;
+  padding: 3px 0;
+  }
+
+.GoodNews {
+  background-color: #52E070;
+  }
+
+.Warning {
+  background-color: #FF5000;
+  }
+
+.Error {
+  background-color: #FF3434;
+  }
+
+
+.CaseMode {
+  background-color: #F6F6F6;
+}
+.ResultMode {
+  background-color: #F6F6F6;
+}
+
+.AdminMode {
+  background-color: #333333;
+}
+
+.StatMode {
+  background-color: #0077CC;
+}
+
+
+a.BigButton {
+  display: block;
+  float:left;
+  padding: 4px 12px;
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  }
+
+a.OpenBug {
+  background: #BC3818;
+  color: #FFFFFF;
+  border: 1px solid #BC3818;
+  border-right: 2px solid #ACACAC;
+  }
+
+a.OpenCase {
+  background: #344B28;
+  color: #FFFFFF;
+  border: 1px solid #ACACAC;
+  border-right: 2px solid #ACACAC;
+  }
+
+/* tab */
+.TabContainer {
+  margin: 4px 0 4px 4px;
+  width: 96%;
+  }
+
+.TabPage, .Tab, .TabSelect {
+  background-color: #FFFFFF;
+  border: 1px solid #919B9C;
+  float: left;
+  margin-left: 0px;
+  position: relative;
+}
+
+.Tab a, .TabSelect a{
+display:block;
+}
+
+.TabPage {
+  padding: 6px 0 3px 5px;
+  top: -2px;
+  width: 98%;
+  height: 180px;
+  z-index: 1;
+  line-height: 18px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.TabPage a {
+text-decoration:none;
+}
+
+.TabPage a:active, .TabPage a:visited{
+color: #6666BB;
+}
+
+.Tab, .TabSelect {
+  border-bottom-width: 0;
+  cursor: hand;
+  display: inline;
+  font-size: 100%;
+  margin: 3px 1px 0 0;
+  padding: 1px 4px 1px;
+  text-align: center;
+}
+
+.TabSelect {
+  margin: 1px 1px 0 0px;
+  padding: 2px 4px 1px;
+  border-top: 1px solid #FFC132;
+  z-index: 2;
+}
+
+.Tab a,  .Tab a:after {
+  text-decoration: none;
+  color: #535353;
+  font-weight: normal;
+  }
+
+.TabSelect a, .TabSelect a:after {
+  text-decoration: none;
+  color: #3557B5;
+  }
+
+.Tab:hover {
+  border-top: 1px solid #E38123;
+}
+
+
+/* tab end*/
+
+/* table fulle link */
+a.FullLink {
+display:block;
+width:100%;
+}
+
+table.ListTable .SortActive {
+background-color:#CDE0FD;
+}
+
+table.ListTable th, table.ListTable td{
+padding:1px 4px;
+}
+
+table.SearchTable th, table.SearchTable td{
+border:0;
+}
+table.SearchTable th.TopLine, table.SearchTable td.TopLine{
+border-top:1px solid #808080;
+}
+
+table.SearchTable #AndORTd {
+border:1px solid #808080;
+border-width:0 1px 0;
+margin-right:2px;
+}
+
+/* form common form */
+div.CommonForm {
+width:95%;
+margin-top: 3px;
+margin-left: 16px;
+}
+
+div.CommonForm h1 {
+font-size:small;
+display: inline;
+}
+
+div.CommonForm dl {
+margin:0;
+padding:1px 0;
+clear: both;
+display:block;
+}
+
+div.CommonForm dl.Line{
+float: left;
+border-bottom: 1px dotted #808080;
+width: 95%;
+height: 1px;
+padding: 0px;
+margin:1px 0;
+display:block;
+overflow:hidden;
+}
+
+div.CommonForm dl dt, div.CommonForm dl dd {
+float:left;
+}
+
+div.CommonForm dl dt {
+width:85px;
+text-align: left;
+padding-right: 1em;
+font-weight: bold;
+color: #111111;
+}
+
+div.CommonForm dl dd {
+margin:0;
+margin-right: 3px;;
+padding: 0;
+}
+
+div.CommonForm dd ol{
+padding-left:0;
+}
+
+div.CommonForm dd.SelectButton {
+padding-top:33px;
+}
+
+div.CommonForm dd.List {
+margin:0px;
+padding:1px 1px 1px 0;
+width:28%;
+}
+
+div.CommonForm dd.Block {
+text-align:left;
+padding:4px 5px;
+line-height: 120%;
+border:1px solid #808080;
+background-color: #F8F8F8;
+width:70%;
+overflow:auto;
+}
+
+div.CommonForm dd.List fieldset{
+width:98%;
+display:block;
+float:left;
+}
+
+div.CommonForm dd.List dl{
+float:left;
+margin-bottom:2px;
+padding:0px;
+clear:both;
+width:100%;
+}
+
+div.CommonForm dd.List dl dt{
+float:left;
+text-align:left;
+padding:0;
+margin:0;
+width:40%;
+clear:none;
+display:block;
+}
+
+div.CommonForm dd.List dl dd{
+float:left;
+text-align:left;
+padding:0;
+margin:0;
+width:auto;
+clear:none;
+}
+
+div.CommonForm select.FullSelect{
+height:1.1em;
+width:100%;
+}
+div.CommonForm select.MultiSelect{
+width:130px;
+}
+
+div.CommonForm select.NormalSelect{
+width:130px;
+}
+
+div.CommonForm label{
+font-size:1em;
+}
+/* form div */
+#BugMain, #CaseMain, #ResultMain{
+margin:0 auto;
+padding:20px 0pt 10px;
+text-align:left;
+width:981px;
+border-color:#DDDDDD;
+border-style:none solid solid;
+border-width:medium 0px 0px;
+}
+
+#BugMain{
+background-color: #F6F6F6;
+}
+
+#BugSummaryInfo, #BugMainInfo, #BugHistory, #CaseSummaryInfo, #CaseMainInfo, #CaseHistory,#ResultSummaryInfo, #ResultMainInfo, #ResultHistory{
+clear:both;
+width:100%;
+margin-top:5px;
+}
+
+#BugMainInfo fieldset,#CaseMainInfo fieldset,#ResultMainInfo fieldset{
+width:100%;
+}
+
+#BugSummaryInfo dt,#CaseSummaryInfo dt,#ResultSummaryInfo dt{
+padding-left:13px;
+width:14%;
+margin-right:3px;
+}
+
+#BugSummaryInfo h1,#CaseSummaryInfo h1,#ResultSummaryInfo h1{
+margin:-10px 10px 0 0;font-size:18px;float:right;clear:none;
+}
+
+#BugHistory p, #CaseHistory p, #ResultHistory p{
+text-align:left;
+margin:3px;
+padding: 3px;
+line-height:1.5em;
+}
+#BugHistory  img, #CaseHistory img, #ResultHistory img{
+max-height: 300px;
+max-width: 300px;
+width:expression(this.width>300 && this.height<this.width?300:true);
+height:expression(this.height>300?300:true);
+overflow:hidden;
+clear:both;
+}
+
+#BugHistory fieldset, #CaseHistory fieldset,#ResultHistory fieldset{
+padding:0;
+}
+
+#BugHistory fieldset textarea,#CaseHistory fieldset textarea,#ResultHistory fieldset textarea{
+width:97%;
+margin:6px;
+margin-bottom:5px;
+}
+
+#BugReproInfo, #CaseReproInfo,#ResultReproInfo{
+width:41%
+}
+
+#BugHistoryInfo, #CaseHistoryInfo,#ResultHistoryInfo{
+width:56%
+}
+
+/* admin form div */
+div.AdminForm {
+width: 60%;
+margin-left: 100px;
+}
+
+div.AdminForm dd.SelectButton {
+padding-top:50px;
+}
+
+div.AdminForm select.MultiSelect {
+width: 150px;
+padding:1px;
+}
+
+div.AdminForm dl dt{
+width: 20%;
+word-break:break-all;
+word-wrap:break-word;
+}
+
+#ParentModuleID{
+width: 100%;
+}
+
+/* pagination */
+#Pagination {
+font-size:12px;
+}
+
+#Pagination a {
+margin: 0 2px;
+clear: none;
+}
+
+/* Bug, Case required field */
+.RequiredField {
+	background-color: #FFFFBB;
+}
+
+/* Bug, Case readonly field */
+.ReadOnlyField {
+	background-color: #F6F6F6;
+	border: 0;
+}
+
+.BugStatusActive{background-color: #FFDDDD;}
+.BugStatusResolved{background-color: #FFFFBB;}
+.BugStatusClosed{background-color: #FFFFFF;}
+
+.ResultValuePass{background-color: #FFFFFF;}
+.ResultValueFail{background-color: #FFDDDD;}
