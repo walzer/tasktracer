@@ -5,6 +5,7 @@
  * config sample.
  *
  * @link        http://www.walzer.cn
+ 				http://www.bugfree.org.cn
  * @package     TaskTracer
  */
 
@@ -24,7 +25,7 @@ $_CFG['MailReportUser'] = array('');
 
 /* 3. Define the username and password of the BugFree database. */
 $_CFG['DB']['User']        = 'root';
-$_CFG['DB']['Password']    = 'Amoik98';
+$_CFG['DB']['Password']    = '123456';
 $_CFG['DB']['Host']        = 'localhost';
 $_CFG['DB']['Database']    = 'tasktracer';
 $_CFG['DB']['TablePrefix'] = 'tt_';
