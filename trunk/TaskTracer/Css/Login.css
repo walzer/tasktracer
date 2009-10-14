@@ -1,0 +1,128 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+html, body {
+	height:100%;
+}
+
+body, textarea, input, select, td, div, p, label {
+	font-size:12px;
+	font-family:verdana,arial,sans-serif;
+}
+
+a {
+	color: #19276B;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7598DC;
+	text-decoration: none;
+}
+
+.clear {
+	clear:both;
+	height:0;
+	width:0;
+	overflow:hidden;
+}
+
+#loginContainer {
+	width:589px;
+	height:285px;
+	position:absolute;
+	margin:-182px 0px 0px -290px;
+	top:50%;
+	left:50%;
+	z-index:100;
+}
+.loginBgImage {
+	float:left;
+}
+#loginMain {
+	float:left;
+	width:551px;
+	height:285px;
+	background:url('../Image/login_bg_center.gif') repeat-x center center;
+}
+#loginLogo {
+	float:left;
+	width:206px;
+	text-align:right;
+	height:285px;
+	background:url('../Image/login_separate_line.gif') no-repeat right center;
+}
+#loginLogo #logo {
+	margin:90px 25px 0 0;
+}
+#LoginFormContainer {
+	float:left;
+	width:345px;
+	height:285px;
+}
+#LoginFormContainer #LoginForm {
+	margin:60px 25px 0 0;
+}
+#LoginFormContainer p {
+	margin:11px 0;
+}
+#LoginFormContainer p label {
+	color:#555E7B;
+	font-size:16px;
+	float:left;
+	display:block;
+	width:82px;
+	text-align:right;
+	padding-right:20px;
+	padding-top:3px !important;
+	padding-top:5px;
+	
+}
+#LoginFormContainer .txtInput {
+	background:url('../Image/login_input.gif') no-repeat left top;
+	border:1px solid #ADBEE0;
+	width:153px;
+	height:22px;
+	padding:3px;
+	margin-top:0px;
+    font-size:18px;
+}
+#LoginFormContainer .select {
+	border:1px solid #ADBEE0;
+	width:153px;
+	height:22px;
+	padding:3px;
+	margin-top:0px;
+    font-size:12px;
+}
+#LoginFormContainer .loginSubmit {
+	float:right;
+	margin-right:58px;
+	background:url('../Image/login_button.png') no-repeat center center;
+	border:0;
+	width:85px;
+	height:24px;
+	color:#283877;
+	font-weight:bold;
+}
+#LoginFormContainer #ActionMessage {
+	clear:both;
+	margin:48px 40px 0 30px;
+	padding:3px 0;
+	text-align:center;
+	border:1px solid #C7D5F1;
+}
+
+.GoodNews {
+  background-color: #52E070;
+  }
+
+.Warning {
+  background-color: #FF5000;
+  }
+
+.Error {
+  background-color: #FFFF0F;
+  }
