@@ -78,6 +78,7 @@ CREATE TABLE `BugInfo` (
 ) TYPE=MyISAM $CharSetCollate;
 CREATE TABLE `CaseInfo` (
   `CaseID` mediumint(8) unsigned NOT NULL auto_increment,
+  `ParentID` mediumint(8) unsigned NOT NULL default '0',
   `ProjectID` smallint(5) unsigned NOT NULL default '0',
   `ProjectName` varchar(100) NOT NULL default '',
   `ModuleID` smallint(5) unsigned NOT NULL default '0',
@@ -115,6 +116,7 @@ CREATE TABLE `CaseInfo` (
   `ScoreTotal` INT NOT NULL DEFAULT '0',
   `ResolvedPercent` TINYINT NOT NULL DEFAULT '0',
   PRIMARY KEY  (`CaseID`),
+  KEY `ParentID` (`ParentID`),
   KEY `ProjectID` (`ProjectID`),
   KEY `ProjectName` (`ProjectName`),
   KEY `ModuleID` (`ModuleID`),
@@ -425,6 +427,7 @@ UPDATE `TestUserQuery` SET QueryString=INSERT(QueryString,1,6,'');
 
 CREATE TABLE `CaseInfo` (
   `CaseID` mediumint(8) unsigned NOT NULL auto_increment,
+  `ParentID` mediumint(8) unsigned NOT NULL default '0',
   `ProjectID` smallint(5) unsigned NOT NULL default '0',
   `ProjectName` varchar(100) NOT NULL default '',
   `ModuleID` smallint(5) unsigned NOT NULL default '0',
@@ -455,6 +458,7 @@ CREATE TABLE `CaseInfo` (
   `CustomField3` varchar(255) NOT NULL default '',
   `IsDroped` enum('1','0') NOT NULL default '0',
   PRIMARY KEY  (`CaseID`),
+  KEY `ParentID` (`ParentID`),
   KEY `ProjectID` (`ProjectID`),
   KEY `ProjectName` (`ProjectName`),
   KEY `ModuleID` (`ModuleID`),

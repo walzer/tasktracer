@@ -977,7 +977,7 @@ $_LANG['ReportBugCount'] = '任务 数量';
 $_LANG["BugReportType"] =  array
 (
 	"ResolvedScoresPerUser" => "完成分值按人分布",
-	"AssignedScoresPerUser" => "被指派分值按人分布",
+	"AssignedScoresPerUser" => "未完成分值按人分布",
 	"ResolvedPercentPerUser" => "完成百分比按人分布",
 	"ResolvedScoresPerDay"  => "完成分值按日分布",
 	"ResolvedScoresQualityPerUser"  => "个人分值质量加权统计",
