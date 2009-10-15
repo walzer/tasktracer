@@ -28,13 +28,14 @@ $_CFG['DBCharset']         = 'UTF8';        // 数据库编码设置，保留默
 
 # 如果是Linux 系统，修改下列目录和文件的权限；如果是Windows系统，跳过这一步
 
-a) chmod 777 Data/TplCompile/
+a) chmod 777 Data/TplCompile
 
-b) chmod 777 BugFile/
+b) chmod 777 BugFile
 
 c) chmod 777 Include/Config.inc.php
 
-# 在浏览器访问http://your_server_name_or_ip/tasktracer。如果设置的数据库不存在，按照提示创建数据库，再点击继续安装. 一路NEXT即可.
+# 在浏览器访问http://your_server_name_or_ip/tasktracer。
+如果设置的数据库不存在，按照提示创建数据库，再点击继续安装. 一路NEXT即可.
 
 # 点击“安装全新的 Task Tracer”。
 
