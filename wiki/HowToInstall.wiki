@@ -1,0 +1,47 @@
+#Task Tracer的安装说明
+
+= Introduction =
+
+参考网页: http://www.bugfree.org.cn/help/#_Toc238453563
+
+
+= Details =
+
+在安装Task Tracer之前，需要首先安装Apache, PHP, Mysql支持软件包，例如XAMPP或EASYPHP等。
+下面以XAMPP为例进行说明。请先访问http://www.apachefriends.org/zh_cn/xampp.html 下载并安装最新的XAMPP版本。
+
+1. 下载最新的Task Tracer源代码, 复制到XAMPP系统的htdocs子目录下.
+如果是Linux系统，安装路径一般为/opt/lampp/htdocs/tasktracer; Window系统的安装路径一般为C:\xampp\htdocs\tasktracer
+
+2. 进入tasktracer目录，修改文件Include/Config.inc.php，修改数据库链接设置：
+
+{{{
+/* 3. Define the username and password of the BugFree database. */
+
+$_CFG['DB']['User']        = 'root';          // 数据库登录用户名
+
+$_CFG['DB']['Password']    = '';             // 数据库登录用户密码
+
+$_CFG['DB']['Host']        = 'localhost';     // 数据库服务器地址
+
+$_CFG['DB']['Database']    = 'bugfree2';    // 指定BugFree数据库名称
+
+$_CFG['DB']['TablePrefix'] = 'bf_';            // 数据库表前缀，默认为bf_。除非有冲突，不建议修改或为空
+
+$_CFG['DBCharset']         = 'UTF8';        // 数据库编码设置，保留默认值
+ 
+}}}
+
+3. 如果是Linux 系统，修改下列目录和文件的权限；如果是Windows系统，跳过这一步
+
+a) chmod 777 Data/TplCompile/
+
+b) chmod 777 BugFile/
+
+c) chmod 777 Include/Config.inc.php
+
+4. 在浏览器访问http://<servername>/tasktracer。如果设置的数据库不存在，按照提示创建数据库，再点击继续安装. 一路NEXT即可.
+
+5. 点击“安装全新的 Task Tracer”。
+
+6. 安装成功后，显示首次登录的默认管理员帐号和密码，按照提示首先使用默认管理员用户名和密码登陆Task Tracer
