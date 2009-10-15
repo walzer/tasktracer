@@ -24,9 +24,9 @@ $_CFG['DB']['Password']    = '';             // 数据库登录用户密码
 
 $_CFG['DB']['Host']        = 'localhost';     // 数据库服务器地址
 
-$_CFG['DB']['Database']    = 'bugfree2';    // 指定BugFree数据库名称
+$_CFG['DB']['Database']    = 'tasktracer';    // 指定tasktracer数据库名称
 
-$_CFG['DB']['TablePrefix'] = 'bf_';            // 数据库表前缀，默认为bf_。除非有冲突，不建议修改或为空
+$_CFG['DB']['TablePrefix'] = 'tt_';            // 数据库表前缀，默认为tt_。除非有冲突，不建议修改或为空
 
 $_CFG['DBCharset']         = 'UTF8';        // 数据库编码设置，保留默认值
  
@@ -40,7 +40,7 @@ b) chmod 777 BugFile/
 
 c) chmod 777 Include/Config.inc.php
 
-4. 在浏览器访问http://<servername>/tasktracer。如果设置的数据库不存在，按照提示创建数据库，再点击继续安装. 一路NEXT即可.
+4. 在浏览器访问http://your_server_name_or_ip/tasktracer。如果设置的数据库不存在，按照提示创建数据库，再点击继续安装. 一路NEXT即可.
 
 5. 点击“安装全新的 Task Tracer”。
 
