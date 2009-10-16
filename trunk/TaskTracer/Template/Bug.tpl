@@ -132,39 +132,39 @@
                                 {/if}
                   </dd>
                 </dl>
-                {if $ProjectID != 4}  <!-- 网游不想要这些字段 -->
+
                 <dl style="line-height:17pt">
                   <dt>{$Lang.BugFields.HowFound}</dt>
                   <dd>
-                               {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
+					  {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
                           {$BugHowFoundList}
                       {else}
                           {$BugInfo.HowFoundName}
-                                {/if}
+					  {/if}
                   </dd>
                 </dl>
 
                 <dl style="line-height:17pt">
                   <dt>{$Lang.BugFields.BugOS}</dt>
                   <dd>
-                               {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
+						{if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
                           {$BugOSList}
-                      {else}
+                      	{else}
                           {$BugInfo.BugOSName}
-                                {/if}
+						{/if}
                   </dd>
                 </dl>
+                
                 <dl style="line-height:17pt">
                   <dt>{$Lang.BugFields.BugBrowser}</dt>
                   <dd>
-                               {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
+						{if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
                           {$BugBrowserList}
-                      {else}
+                      	{else}
                           {$BugInfo.BugBrowserName}
-                                {/if}
+						{/if}
                   </dd>
                 </dl>
-                {/if}
 
                 <dl>
                   <dt>{$Lang.BugFields.LastEditedBy}</dt>
@@ -176,13 +176,14 @@
                 </dl>
               </fieldset>
                 </td>
+                
                 <td style="width: 40%" valign="top">
                 <fieldset class="Normal FloatLeft" style="width: 95%">
                   <legend>{$Lang.BugOpenedInfo}</legend>
                   <dl>
                     <dt>{$Lang.BugFields.OpenedBy}</dt>
                     <dd>
-                                {if $ActionType eq 'OpenBug'}
+						{if $ActionType eq 'OpenBug'}
                             {$templatelite.session.TestRealName}
                         {else}
                             {$BugInfo.OpenedByName}
@@ -192,14 +193,14 @@
                   <dl>
                     <dt>{$Lang.BugFields.OpenedDate}</dt>
                     <dd>
-                                {if $ActionType eq 'OpenBug'}
+                        {if $ActionType eq 'OpenBug'}
                             {$templatelite.now|date_format:"%Y-%m-%d"}
                         {else}
                             {$BugInfo.OpenedDate|date_format:"%Y-%m-%d"}
                         {/if}
                     </dd>
                   </dl>
-                  {if $ProjectID != 4}  <!-- 网游不想要的字段 -->
+
                   <dl style="line-height:17pt">
                     <dt>{$Lang.BugFields.OpenedBuild}</dt>
                     <dd id="BuildContainer">
@@ -210,8 +211,8 @@
                       {/if}
                     </dd>
                   </dl>
-                  {/if}
                 </fieldset>
+                
                 <fieldset class="Normal FloatLeft" style="width: 95%">
                   <legend>{$Lang.BugResolvedInfo}</legend>
                   <dl>
@@ -231,45 +232,47 @@
                         {if $ActionType eq 'Activated'}
                         {elseif $ActionType eq 'Resolved'}
                             {$ActionDate}
-                {else}
-                  {if $BugInfo.ResolvedDate neq $CFG.ZeroTime}{$BugInfo.ResolvedDate|date_format:"%Y-%m-%d"} {/if}
-                {/if}
+                		{else}
+                  			{if $BugInfo.ResolvedDate neq $CFG.ZeroTime}{$BugInfo.ResolvedDate|date_format:"%Y-%m-%d"} {/if}
+                		{/if}
                     </dd>
                   </dl>
                   <dl style="line-height:17pt">
                     <dt>{$Lang.BugFields.ResolvedBuild}</dt>
                   <dd id="BuildContainer">
-                    {if $ActionType eq 'Activated'}
+                      {if $ActionType eq 'Activated'}
                       {elseif $ActionType eq 'Resolved' or ($BugInfo.BugStatus neq 'Active' and $ActionType eq 'Edited')}
                         <input type=text name="ResolvedBuildInput" id="ResolvedBuild" size="35" class="MyInput RequiredField" maxlength="100" value="{$BugInfo.ResolvedBuild}" />
                       {else}
                         <input type=text name="ResolvedBuildInput1" id="ResolvedBuildInput1" size="35" class="MyInput ReadOnlyField" readonly=true value="{$BugInfo.ResolvedBuild}" />
-						{if $BugInfo.BugStatus neq 'Active'}<input type="hidden" name="ResolvedBuildInput"  value="{$BugInfo.ResolvedBuild}" />{/if}
-                        {/if}
+						{if $BugInfo.BugStatus neq 'Active'}
+							<input type="hidden" name="ResolvedBuildInput"  value="{$BugInfo.ResolvedBuild}" />
+						{/if}
+                      {/if}
                   </dd>
                   </dl>
                   <dl style="line-height:17pt">
                     <dt>{$Lang.BugFields.Resolution}</dt>
                     <dd>
-                    {if $ActionType eq 'Activated'}
-                      {elseif $ActionType eq 'Resolved' or ($BugInfo.BugStatus neq 'Active' and $ActionType eq 'Edited')}
-                                    {$ResolutionList}
-                                {else}
-                                    {$BugInfo.ResolutionName}{if $BugInfo.BugStatus neq 'Active'}<input type="hidden" name="Resolution" value="{$BugInfo.Resolution}" />{/if}
-                                {/if}
+                    	{if $ActionType eq 'Activated'}
+                      	{elseif $ActionType eq 'Resolved' or ($BugInfo.BugStatus neq 'Active' and $ActionType eq 'Edited')}
+							{$ResolutionList}
+						{else}
+                            {$BugInfo.ResolutionName}{if $BugInfo.BugStatus neq 'Active'}<input type="hidden" name="Resolution" value="{$BugInfo.Resolution}" />{/if}
+						{/if}
                   </dd>
                   </dl>
                   <dl style="line-height:17pt">
                     <dt>{$Lang.BugFields.DuplicateID}</dt>
                     <dd>
-                    {if $ActionType eq 'Activated'}
-                      {elseif $ActionType eq 'Resolved' or ($BugInfo.BugStatus neq 'Active' and $ActionType eq 'Edited')}
+                    	{if $ActionType eq 'Activated'}
+                      	{elseif $ActionType eq 'Resolved' or ($BugInfo.BugStatus neq 'Active' and $ActionType eq 'Edited')}
                           <input type="text" name="DuplicateID" id="DuplicateID" size="35" class="MyInput RequiredField" value="{$BugInfo.DuplicateID}" {if $BugInfo.Resolution neq "Duplicate"}style="display:none;"{/if} />
                         {else}
-                        {foreach from=$BugInfo.DuplicateIDList item="DuplicateID"}
-                            <a href="Bug.php?BugID={$DuplicateID}" target="_blank">{$DuplicateID}</a>
-                        {/foreach}{if $BugInfo.Resolution eq 'Duplicate'}<input type="hidden" name="DuplicateID" value="{$BugInfo.DuplicateID}" />{/if}
-                                {/if}
+                        	{foreach from=$BugInfo.DuplicateIDList item="DuplicateID"}
+                            	<a href="Bug.php?BugID={$DuplicateID}" target="_blank">{$DuplicateID}</a>
+                        	{/foreach}{if $BugInfo.Resolution eq 'Duplicate'}<input type="hidden" name="DuplicateID" value="{$BugInfo.DuplicateID}" />{/if}
+						{/if}
                     </dd>
                   </dl>
                 </fieldset>
@@ -299,7 +302,7 @@
                 </fieldset>
                 </td>
                 <td style="width: 30%" valign="top">
-                {if $ProjectID != 4}  <!-- 网游不想要的字段 -->
+
                 <fieldset class="Normal FloatLeft" style="width: 95%">
                   <legend>{$Lang.BugOtherInfo}</legend>
                    <dl style="line-height:17pt">
@@ -315,7 +318,7 @@
                   <dl style="line-height:17pt">
                     <dt>{$Lang.BugFields.BugMachine}</dt>
                     <dd>
-                               {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
+						{if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
                             <input type="text" name="BugMachine" id="BugMachine" size="20" class="MyInput"  maxlength="80" value="{$BugInfo.BugMachine}" />
                         {else}
                             <input type="text" name="BugMachine" id="BugMachine" size="20" readonly=true class="MyInput ReadOnlyField"  maxlength="80" value="{$BugInfo.BugMachine}" />
@@ -333,7 +336,7 @@
                     </dd>
                   </dl>
                 </fieldset>
-                {$/if}
+
                 <fieldset class="Normal FloatLeft" style="width: 95%">
                   <legend>{$Lang.BugConditionInfo}</legend>
                   <dl style="line-height:17pt">
@@ -357,17 +360,6 @@
 							<a href="Case.php?CaseID={$BugInfo.CaseID}" target="_blank">{$BugInfo.CaseID}</a>
                     		<input type="hidden" name="CaseID" value="{$BugInfo.CaseID}" />
                     	{/if}
-
-                        
-                    	<!--------------
-                       {if $ActionType eq 'OpenBug' or $EditMode eq 'true'}
-                         <input type="text" name="CaseID" id="CaseID" size="20" class="MyInput" maxlength="80" value="{$BugInfo.CaseID}" />
-                       {else}
-                         {foreach from=$BugInfo.CaseIDList item="CaseID"}
-                           <a href="Case.php?CaseID={$CaseID}" target="_blank">{$CaseID}</a>
-                         {/foreach}
-                       {/if}
-                       ------------->
                     </dd>
                   </dl>
                   <dl style="line-height:17pt">
@@ -480,17 +472,6 @@
 														</option>
 													{/section}
 													
-													<!---
-													<option value="1" {$affair.scope[0].selected}>
-														{$affair.scope[0].Description}
-													</option>
-													<option value="2" {$affair.scope[1].selected}>
-														{$affair.scope[1].Description}
-													</option>
-													<option value="3" {$affair.scope[2].selected}>
-														{$affair.scope[2].Description}
-													</option>
-													---->
 												</select>
 												&nbsp;&nbsp;{$Lang.Affair.complexity}: <!-- 复杂度 -->
 												<select name="complexity[{$affair.AffairID}]" {$AffairSelectStatus}>
@@ -499,12 +480,6 @@
 															{$affair.complexity[i].Description}
 														</option>
 													{/section}
-													
-													<!-- 
-													<option value="A" {$affair.complexity[0].selected}> {$affair.complexity[0].Description} </option>
-													<option value="B" {$affair.complexity[1].selected}> {$affair.complexity[1].Description} </optoin>
-													<option value="C" {$affair.complexity[2].selected}> {$affair.complexity[2].Description} </optoin>
-													-->
 												</select>
 											{ /if }
 										</dd></dl>
