@@ -86,3 +86,11 @@ http://images.cnblogs.com/cnblogs_com/walzer/214955/r_AffairList.jpg
 (a) 横向事务分解并不是必要的。您可以不做横向事务分解，而在新建任务页面中，填写“未列事务分值”进行工作量估算。这适合于一般的专家估算法。
 
 (b) 甚至您可以根本不做工作量估算，连“未列事务分值”也不用填即可创建完新任务。那么你只用了Task Tracer做完工作分解。
+
+===(4)对任务的统计图表 ===
+就上面西天取经项目的任务列表，主要的统计图表如下:
+
+http://images.cnblogs.com/cnblogs_com/walzer/214955/r_REPORT_ScoreResolved.jpg
+http://images.cnblogs.com/cnblogs_com/walzer/214955/r_REPORT_ScoreUnresolved.jpg
+http://images.cnblogs.com/cnblogs_com/walzer/214955/r_REPORT_ResolvedPercent.jpg
+http://images.cnblogs.com/cnblogs_com/walzer/214955/r_REPORT_StatusByScore.jpg
