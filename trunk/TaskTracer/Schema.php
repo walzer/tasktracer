@@ -32,7 +32,7 @@ CREATE TABLE `BugInfo` (
   `BugStatus` varchar(20) NOT NULL default '',
   `BugSubStatus` varchar(50) NOT NULL default '',
   `LinkID` varchar(255) default NULL,
-  `CaseID` varchar(255) NOT NULL default '',
+  `CaseID` varchar(255) default NULL,
   `DuplicateID` varchar(255) default NULL,
   `MailTo` varchar(255) NOT NULL default '',
   `OpenedBy` varchar(30) NOT NULL default '',
